@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>student</title>
+    <style>
+    body{
+      background-image: url("http://www.photofurl.com/wp-content/uploads/2011/05/red-and-grey-photoshop-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h3{
+    	text-align:justify;
+    	font:Trebuchet;
+    	font-size: 24px;
+    	padding-left:90px;
+    }
+    img{
+    	padding-left: 20px;
+    }
+    form{
+      margin-left: 400px;
+      margin-top: 200px;
+      font-size: 25px;
+    }
+    button{
+      margin-left: 550px;
+      margin-top: 40px;
+      font-size: 30px;
+      background-color: darkred;
+      color: white;
+      border-radius: 30px;
+    }
+    </style>
+  </head>
+  <body>
+		  <form action='/loginstudent' method="POST">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Meclogo.jpg" style="width:50px" align="left">
+      <h3>Model Engineering College,<br>Thrikkakara</h3>
+    </div>
+    <div>
+      <p>Register Number:
+        <input type="text" name="rollno">
+    <button type="submit" name="viewstud" >View</button>
+		<br>
+		{{msg}}
+		</form>
+  </body>
+</html>

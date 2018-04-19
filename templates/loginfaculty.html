@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+body{
+		background-size:cover;
+		background-image: url("http://www.photofurl.com/wp-content/uploads/2011/05/red-and-grey-photoshop-background.jpg");
+	}
+
+h1{
+	text-align:center;
+	font-size: 24px;
+	padding-left:90px;
+
+}
+h3{
+	text-align:justify;
+	font:Trebuchet;
+	font-size: 24px;
+	padding-left:90px;
+
+}
+div{
+	text-align:center;
+}
+button:hover{
+
+		font-size: 40px;
+}
+
+.field{
+    margin-top: 190px;
+    font-size: 25px;
+    color: black;
+}
+
+button{
+background-color: darkred;
+margin-top: 50px;
+	color: white;
+	background="http://cdn.pcwallart.com/images/the-color-blue-wallpaper-1.jpg";
+
+		font-size: 30px;
+		 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		 border-radius: 20px;
+}
+</style>
+</head>
+<body>
+
+	<div class="logo">
+		<img src="https://upload.wikimedia.org/wikipedia/en/6/64/Meclogo.jpg" style="width:50px"
+		align="left">
+		<h3>Model Engineering College,<br>Thrikkakara</h3>
+
+	</div>
+    <h1></h1>
+    <div>
+    <div class="field">
+			<form action="/loginfaculty" method="POST">
+				<br>
+    		Faculty ID<input type="text" name="facid" placeholder="Faculty ID" required="required" />
+				<br>
+  			<br>
+    		Password <input type="password" name="pwd" placeholder="Password" required="required" />
+  			<br>
+  			<br>
+  			{{msg}}
+  			<br>
+  			<br>
+    		<button type="submit" name="submit">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

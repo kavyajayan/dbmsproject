@@ -1,0 +1,107 @@
+
+<html>
+  <head>
+    <title>edit</title>
+    <style>
+    body{
+      background-repeat: no-repeat;
+      background-size: cover;
+background-image: url("http://www.photofurl.com/wp-content/uploads/2011/05/red-and-grey-photoshop-background.jpg");
+    }
+    img{
+    	padding-left: 20px;
+    }
+    .dropbtn {
+      margin-top: 20px;
+    font-size: 25px;
+}
+h3{
+	text-align:justify;
+	font:Trebuchet;
+	font-size: 24px;
+	padding-left: 90px;
+}
+.dropdown {
+    position: center;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: center;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 15px 15px;
+    text-decoration:none;
+    display:flex;
+    color:darkred;
+    background-color: white;
+}
+.dropdown-content a:hover {background-color:tomato;
+padding-top: 2px;
+min-width:5px;}
+.dropdown:hover .dropdown-content {
+    display:flex;
+  }
+.dropdown:hover .dropbtn {
+    background-color:white;
+    color: darkred;
+}
+.field{
+    margin-top: 150px;
+    font-size: 25px;
+    color: black;
+}
+.view:hover{
+    font-size:30px;
+}
+.sub:hover{
+    font-size:30px;
+}
+a{
+  text-color: darkred;
+}
+button{
+    font-size: 20px;
+    color:white;
+    border-radius: 20px;
+    background-color:darkred;
+    margin-top: 50px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Meclogo.jpg" style="width:50px"
+      align="left">
+      <h3>Model Engineering College,<br>Thrikkakara</h3>
+
+    </div>
+<div align="center">
+  <div class="field">
+      <form action='/facultymain' method="POST">
+      Register Number:
+      <input type="text" name="regno">
+ <button  class="view" type="submit" name="viewbtn">VIEW</button>
+ <br>
+ Activity id:
+    <input type="number" name="actid" min=1 max=10>
+	<br>
+
+
+	<button class="sub" type="submit" name="actsubmit">SUBMIT ACTIVITY</button>
+  <br>
+  
+  {{mess}}
+    </form>
+  </div>
+
+    </div>
+
+    </div>
+
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+
+  <html>
+  <head>
+    <title>viewstud</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    body{
+      background-image: url("http://www.photofurl.com/wp-content/uploads/2011/05/red-and-grey-photoshop-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h3{
+	text-align:justify;
+	font:Trebuchet;
+	font-size: 24px;
+	padding-left:90px;
+
+}
+
+
+      .vst{
+            font-size: 30px;
+            background-color: darkred;
+margin-top: 200px;
+	color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		 border-radius: 20px;
+     margin-left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/viewfac" method="POST">
+    <div class="logo">
+		<img src="https://upload.wikimedia.org/wikipedia/en/6/64/Meclogo.jpg" style="width:50px"
+		align="left">
+		<h3>Model Engineering College,<br>Thrikkakara</h3>
+
+	</div>
+  <button name="viewstud" type="submit" class="vst">VIEW</button>
+  <br>
+  <div class="col-lg-4">
+    <br>
+    ACTIVITY NAME
+    {% for name in namesfac %}
+      <br>
+      {{name}}
+    {% endfor %}
+  </div>
+  <div class="col-lg-4">
+    LEVELS
+    <br>
+    {% for level in levelsfac %}
+    <br>
+    {{level}}
+    {% endfor %}
+  </div>
+  <div class="col-lg-4">
+    <br>
+    POINTS
+    {% for point in pointsfac %}
+    <br>
+    {{point}}
+    {% endfor %}
+</div>
+</form>
+</body>
+</html>
